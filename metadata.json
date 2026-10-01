@@ -1,0 +1,6 @@
+{
+  "name": "Hotel Management System",
+  "description": "Comprehensive front desk, tape chart, room folio, housekeeping, restaurant POS, and manager operations for independent hotels.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

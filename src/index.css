@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "IBM Plex Mono", Menlo, Monaco, Consolas, monospace;
+
+  --color-stone-bg: #F4F5F2;
+  --color-surface: #FFFFFF;
+  --color-ink: #14202B;
+  --color-ink-muted: #57636E;
+  --color-teal: #0F5E63;
+  --color-teal-hover: #0C4D51;
+  --color-teal-pressed: #093C3F;
+  --color-teal-light: #E7F3F3;
+  --color-border: #D8DCD5;
+  --color-border-subtle: #E8ECE5;
+  --color-warning: #A16207;
+  --color-error: #B42318;
+  --color-success: #15803D;
+  --radius-sm: 6px;
+  --radius-md: 6px;
+  --radius-lg: 6px;
+}
+
+:root {
+  font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #14202B;
+  background-color: #F4F5F2;
+}
+
+/* Tabular figures for all financial amounts and room identifiers */
+.font-mono, [data-tabular] {
+  font-family: "IBM Plex Mono", monospace;
+  font-feature-settings: "tnum" on, "lnum" on;
+}
+
+/* Custom scrollbars for dense tape chart grid */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #EEF0EC;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4C9C0;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A8AFA3;
+}
+
+/* Print stylesheet for GST invoices */
+@media print {
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}

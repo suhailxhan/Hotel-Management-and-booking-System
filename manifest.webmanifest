@@ -1,0 +1,16 @@
+{
+  "name": "Hotel Management System",
+  "short_name": "HMS",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F4F5F2",
+  "theme_color": "#0F5E63",
+  "description": "Quiet, reliable front desk, housekeeping, restaurant and property management system",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
